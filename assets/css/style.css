@@ -1,0 +1,682 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+
+/* Base
+------------------------------------------------------------*/
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  color: #000;
+  line-height: 1.75;
+  background-color: #fdfdfd;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #071e3d;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+@media (max-width: 767px) {
+
+  /* SPのみ改行するspan */
+  .br-sp {
+    display: block;
+  }
+}
+
+
+
+/* 複数箇所で使いまわす指定
+------------------------------------------------------------*/
+
+section {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 5px;
+  line-height: 1;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #000;
+  letter-spacing: 5px;
+  white-space: nowrap;
+}
+
+
+/* ヘッダー
+------------------------------------------------------------*/
+
+.header {
+  /* position: fixed; */
+  /* 表示確認のため後ほどコメントアウトを外します */
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 100;
+  width: 100%;
+  height: 100px;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+  padding: 0 7px 0 0;
+}
+
+/* ハンバーガーメニューボタン */
+.hamburger-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hamburger-button {
+    display: none;
+  }
+}
+
+/* SPナビゲーション */
+.sp-nav {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  display: none;
+  z-index: 1000;
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  line-height: 56px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fdfdfd;
+  box-sizing: border-box;
+}
+
+.sp-nav i {
+  font-size: 30px;
+}
+
+.sp-nav-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sp-nav-list li {
+  margin-bottom: 2.5rem;
+}
+
+.pc-nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .pc-nav {
+    display: block;
+  }
+
+  .pc-nav-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    column-gap: 62px;
+    padding-right: 50px;
+  }
+
+  .pc-nav-list li {
+    letter-spacing: 1.4px;
+  }
+
+  .pc-nav-list i {
+    font-size: 30px;
+  }
+
+}
+
+
+/* カバー
+------------------------------------------------------------*/
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 31.25rem;
+  color: #000;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .cover {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.cover-top {
+  padding-bottom: 47px;
+  padding-left: 2px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+@media (min-width: 768px) {
+  .cover-top {
+    padding-bottom: 6px;
+    padding-left: 48px;
+  }
+}
+
+.cover-title {
+  font-size: 33px;
+  letter-spacing: 3.7px;
+}
+
+@media (min-width: 768px) {
+  .cover-title {
+    font-size: 65px;
+    letter-spacing: 7.4px;
+  }
+}
+
+.cover p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .cover p {
+    font-size: 36px;
+    letter-spacing: 4.7px;
+    margin-bottom: 6px;
+  }
+}
+
+
+/* works部分
+------------------------------------------------------------*/
+
+.works,
+.gallery,
+.lp {
+  padding: 94px 0 102px;
+}
+
+@media (min-width: 768px) {
+
+  .works,
+  .gallery,
+  .lp {
+    padding: 92px 30px 109px;
+  }
+}
+
+/* スライダー */
+.swiper {
+  padding-bottom: 1.5rem;
+  margin-top: 57px;
+}
+
+/* @media (min-width: 768px) {
+  .swiper {
+    padding-bottom: 1.7rem;
+    margin-top: 100px;
+  }
+} */
+
+.swiper-wrapper {
+  max-width: 356px;
+  margin: 0 auto;
+}
+
+/* @media (min-width: 768px) {
+  .swiper-wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+} */
+
+/* スライダーを包む要素を作っている場合 */
+/* 表示幅をここで変更 */
+.slider-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper .slick-slide {
+  padding: 0 20px;
+  /* スライド間の左右スペース（合計16px） */
+  box-sizing: border-box;
+}
+
+/* slick の list の余白を打ち消す */
+.swiper-wrapper .slick-list {
+  margin: 0 -8px;
+}
+
+
+/* ドット */
+.slick-dots {
+  bottom: -30px;
+}
+
+@media (min-width: 768px) {
+  .slick-dots {
+    bottom: -35px;
+  }
+}
+
+.slick-dots li {
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+}
+
+.slick-dots li button {
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  background-color: #ddd;
+  border-radius: 50%;
+}
+
+.slick-dots li button::before {
+  width: 1rem;
+  height: 1rem;
+  line-height: normal;
+  color: #ddd;
+}
+
+.slick-dots li button:hover::before,
+.slick-dots li.slick-active button::before {
+  color: #168352;
+  background-color: #168352;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+
+/* works部分のグリッド表示
+
+/* PCでは swiper-wrapper をグリッド表示にする（works を grid にする） */
+@media (min-width: 768px) {
+  .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* カラム数は調整可 */
+    gap: 35px;
+    /* グリッド間隔 */
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+    /* slick が残した inline style をリセットするために重要 */
+    box-sizing: border-box;
+  }
+
+  /* 各カード要素（スライドの直下要素）をカード扱いにする */
+  .swiper-wrapper>* {
+    box-sizing: border-box;
+    padding: 0;
+    /* 必要に応じて調整 */
+    background: transparent;
+  }
+
+  /* 画像を揃えて切り抜き表示 */
+  .swiper-wrapper>* img {
+    width: 100%;
+    /*height: 240px;  高さは好みで変更 */
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ドットやslick固有の余白は不要なら非表示に */
+  .slick-dots {
+    display: none;
+  }
+}
+
+/* gallery部分
+------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .gallery .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* カラム数は調整可 */
+    gap: 35px;
+    /* グリッド間隔 */
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+    /* slick が残した inline style をリセットするために重要 */
+    box-sizing: border-box;
+  }
+
+  .swiper-slide01 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+
+/* Lp & Web-site部分
+------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .lp .swiper-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* カラム数は調整可 */
+    gap: 35px;
+    /* グリッド間隔 */
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+    /* slick が残した inline style をリセットするために重要 */
+    box-sizing: border-box;
+  }
+
+  .swiper-slide14 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.lp-inner .small {
+  font-size: 30px;
+}
+
+/* モーダルウィンドウ
+------------------------------------------------------------*/
+/* ...existing code... */
+
+/* 画像モーダル（PCのみ） */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.image-modal.is-open {
+  display: flex;
+}
+
+.image-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.image-modal__content {
+  position: relative;
+  z-index: 2;
+  /* 横幅を広く、縦は画面高さに合わせる */
+  width: 95%;
+  max-width: 1200px;
+  /* 最大横幅 */
+  max-height: 95vh;
+  /* 画面の高さに対する最大値 */
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-modal__content img {
+  display: block;
+  width: 100%;
+  /* 横幅にフィット */
+  height: auto;
+  max-height: calc(95vh - 24px);
+  /* ヘッダー等の余白分を引く */
+  object-fit: contain;
+  /* 縦長・横長どちらも収まるように */
+  border-radius: 4px;
+}
+
+/* 閉じるボタンを目立たせる（位置をコンテンツ内右上に） */
+.image-modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SPではモーダルを無効化（念のため） */
+@media (max-width: 767px) {
+  .image-modal {
+    display: none !important;
+  }
+}
+
+
+/* profile部分
+------------------------------------------------------------*/
+
+.profile {
+  padding: 75px 0 50px;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    padding: 93px 0 101px;
+  }
+}
+
+/* .profile-heading {
+  padding-top: 174px;
+} */
+
+/* @media (min-width: 768px) {
+  .profile-heading {
+    padding-top: 95px;
+  }
+} */
+
+@media (min-width: 768px) {
+  .profile .container {
+    margin: 46px 0 0 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 50px;
+  }
+}
+
+.text-center {
+  letter-spacing: 5px;
+}
+
+.profile img {
+  margin-top: 68px;
+}
+
+@media (min-width: 768px) {
+  .profile img {
+    margin-top: 0;
+  }
+}
+
+.profile-text {
+  padding-top: 73px;
+}
+
+@media (min-width: 768px) {
+  .profile-text {
+    padding-top: 0;
+  }
+}
+
+.profile .container p {
+  font-size: 23px;
+  max-width: 352px;
+  margin: auto;
+  text-align: left;
+  letter-spacing: 1.9px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .profile .container p {
+    font-size: 23px;
+    max-width: 100%;
+    margin: auto;
+    text-align: left;
+    letter-spacing: 3px;
+  }
+}
+
+.profile .container .profile-contact {
+  margin-top: 52px;
+  line-height: 1.4;
+  letter-spacing: 3px;
+}
+
+.profile .container .profile-skills {
+  margin-top: 17px;
+}
+
+@media (min-width: 768px) {
+  .profile .container .profile-contact {
+    margin-top: 34px;
+    line-height: 1.4;
+  }
+
+  .profile .container .profile-skills {
+    margin-top: 0;
+  }
+
+  /* .profile .container .profile-skills .skills {
+    margin-right: 80px;
+  } */
+
+  .profile .container .profile-skills .skills-study {
+    display: block;
+    margin-left: 103px;
+    letter-spacing: 3.5px;
+  }
+
+  .profile .container .profile-contact br,
+  .profile .container .profile-skills br {
+    display: none;
+  }
+}
+
+
+/* footer部分
+------------------------------------------------------------*/
+
+/* .footer {
+  margin-top: 3.5rem;
+} */
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 3px 5px 13px;
+}
+
+@media (min-width: 768px) {
+  .footer-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 58px;
+    margin: 26px 0 0 39px;
+  }
+}
+
+.footer-nav-list-top {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  column-gap: 30px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .footer-nav-list-top {
+    display: flex;
+    list-style: none;
+    column-gap: 58px;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
+
+.footer-nav-list-bottom {
+  list-style: none;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+  .footer-nav-list-bottom {
+    font-size: 29px;
+  }
+}
+
+.footer-copyright {
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 1.4px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .footer-copyright {
+    line-height: 0.5;
+    text-align: end;
+    letter-spacing: 2.3px;
+    font-size: 18px;
+    margin-right: 28px;
+  }
+}
