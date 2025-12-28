@@ -405,7 +405,7 @@ ul {
   width: 1.6rem;
   height: 4.4rem;
   content: "";
-  background-image: url("./assets/image/frame_left.png");
+  background-image: url("../image/frame_left.png");
   background-size: contain;
 }
 
@@ -414,7 +414,7 @@ ul {
   width: 1.6rem;
   height: 4.4rem;
   content: "";
-  background-image: url("./assets/image/frame_right.png");
+  background-image: url("../image/frame_right.png");
   background-size: contain;
 }
 
@@ -424,7 +424,7 @@ ul {
     width: 3.4375rem;
     height: 9.6875rem;
     content: "";
-    background-image: url("./assets/image/frame_left.png");
+    background-image: url("../image/frame_left.png");
     background-size: contain;
   }
 
@@ -433,7 +433,7 @@ ul {
     width: 3.4375rem;
     height: 9.6875rem;
     content: "";
-    background-image: url("./assets/image/frame_right.png");
+    background-image: url("../image/frame_right.png");
     background-size: contain;
   }
 }
@@ -1178,7 +1178,7 @@ table {
   display: flex;
   align-items: center;
   height: 10.625rem;
-  background-image: url("./assets/image/pht_qa_sp.jpg");
+  background-image: url("../image/pht_qa_sp.jpg");
   background-size: cover;
 }
 
@@ -1186,7 +1186,7 @@ table {
   display: flex;
   align-items: center;
   height: 10.625rem;
-  background-image: url("./assets/image/pht_classroom_sp.jpg");
+  background-image: url("../image/pht_classroom_sp.jpg");
   background-size: cover;
 }
 
@@ -1195,7 +1195,7 @@ table {
     justify-content: center;
     width: 100%;
     height: 20rem;
-    background-image: url("./assets/image/pht_qa_pc.jpg");
+    background-image: url("../image/pht_qa_pc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1204,7 +1204,7 @@ table {
     justify-content: center;
     width: 100%;
     height: 20rem;
-    background-image: url("./assets/image/pht_classrooms_pc.jpg");
+    background-image: url("../image/pht_classrooms_pc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
