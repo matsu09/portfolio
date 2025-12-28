@@ -336,7 +336,7 @@ h3 span {
   .inner-bottom {
     height: 545px;
     padding: 2rem 1rem;
-    background-image: url("/web-site/assets/image/about_img_sp.jpg");
+    background-image: url("./assets/image/about_img_sp.jpg");
     background-size: cover;
   }
 
@@ -1371,7 +1371,7 @@ contact
 ------------------------------------------ */
 .contact {
   height: 360px;
-  background-image: url("/assets/image/bg_products_service_contact_sp.jpg");
+  background-image: url("./assets/image/bg_products_service_contact_sp.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -1379,7 +1379,7 @@ contact
 @media (min-width: 768px) {
   .contact {
     height: 450px;
-    background-image: url("/assets/image/bg_products_service_contact_pc.jpg");
+    background-image: url("./assets/image/bg_products_service_contact_pc.jpg");
     background-position: center;
     background-size: cover;
   }
