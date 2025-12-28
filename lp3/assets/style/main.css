@@ -63,7 +63,7 @@ li {
 }
 
 .h2-title::before {
-  content: url(/lp3/assets/image/kirakira_left.png);
+  content: url(./assets/image/kirakira_left.png);
   transform: scale(0.8);
   position: absolute;
   left: -1.2rem;
@@ -71,7 +71,7 @@ li {
 }
 
 .h2-title::after {
-  content: url(/lp3/assets/image/kirakira_right.png);
+  content: url(./assets/image/kirakira_right.png);
   transform: scale(0.8);
   position: absolute;
   right: -1.1rem;
@@ -81,7 +81,7 @@ li {
 @media (min-width: 768px) {
   .h2-title::before {
     content: '';
-    background-image: url(/lp3/assets/image/kirakira_left.png);
+    background-image: url(./assets/image/kirakira_left.png);
     position: absolute;
     display: block;
     left: -3.8rem;
@@ -94,7 +94,7 @@ li {
 
   .h2-title::after {
     content: '';
-    background-image: url(/lp3/assets/image//kirakira_right.png);
+    background-image: url(./assets/image/kirakira_right.png);
     position: absolute;
     display: block;
     right: -3.8rem;
@@ -304,7 +304,7 @@ li {
 
 .cover-inner {
   height: 313px;
-  background-image: url("/lp3/assets/image/mainvisual_w_sp.png");
+  background-image: url("./assets/image/mainvisual_w_sp.png");
   background-size: 13.625rem;
   background-repeat: no-repeat;
   background-position: left 95px;
@@ -317,7 +317,7 @@ li {
 @media (min-width: 768px) {
   .cover-inner {
     height: 612px;
-    background-image: url(/lp3/assets/image/mainvisual_w_pc.png);
+    background-image: url(./assets/image/mainvisual_w_pc.png);
     background-size: 31rem;
     background-repeat: no-repeat;
     background-position: left 105px;

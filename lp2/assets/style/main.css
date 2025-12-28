@@ -81,7 +81,7 @@ h3 {
   position: relative;
   width: 100vw;
   height: 28.125rem;
-  background-image: url("/lp2/assets/image/mainVisual_sp.jpg");
+  background-image: url("./assets/image/mainVisual_sp.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -91,7 +91,7 @@ h3 {
   .cover {
     max-width: 100%;
     height: 45rem;
-    background-image: url("/lp2/assets/image/mainVisual_pc.jpg");
+    background-image: url("./assets/image/mainVisual_pc.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -308,7 +308,7 @@ h3 {
   height: 42.5rem;
   padding-top: 2.7rem;
   padding-bottom: 3.5rem;
-  background-image: url("/lp2/assets/image/cream_sp.jpg");
+  background-image: url("./assets/image/cream_sp.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -318,7 +318,7 @@ h3 {
   .product {
     height: 34.375rem;
     padding: 7.6rem 16.4% 5.3rem;
-    background-image: url("/lp2/assets/image/cream_pc.jpg");
+    background-image: url("./assets/image/cream_pc.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
